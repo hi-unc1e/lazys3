@@ -96,6 +96,7 @@ end
 
 wordlist = Wordlist.from_file(ARGV[0], 'common_bucket_prefixes.txt')
 
-puts "Generated wordlist from file, #{wordlist.length} items..."
+wordlist.each { |x| puts x }
+# puts "Generated wordlist from file, #{wordlist.length} items..."
 
-Scanner.new(wordlist).scan
+# Scanner.new(wordlist).scan
